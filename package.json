@@ -1,11 +1,12 @@
 {
-  "name": "@capacitor-community/text-to-speech-badri",
-  "version": "5.0.0",
-  "description": "Capacitor plugin for synthesizing speech from text.",
+  "name": "text-to-speech-badri",
+  "version": "5.0.1",
+  "description": "Plugin for synthesizing speech from text.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
+  "private": false,
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
     "verify:ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin -destination generic/platform=iOS && cd ..",
@@ -55,13 +56,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capacitor-community/text-to-speech.git"
-  },
-  "bugs": {
-    "url": "https://github.com/capacitor-community/text-to-speech/issues"
+    "url": "git+https://github.com/Dhruv-1105/text-to-speech"
   },
   "keywords": [
-    "capacitor",
     "plugin",
     "native"
   ],
