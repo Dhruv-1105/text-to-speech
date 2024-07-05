@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 5.0.0 (2024-07-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* This plugin now only supports Capacitor 6.
+* update to Capacitor 5 (#99)
+* This plugin now only supports Capacitor 4.
+* `TTSOptions` properties `locale`, `speechRate`, `pitchRate` renamed to `lang`, `rate`, `pitch`.
+* remove `setSpeechRate` and `setPitchRate`
+* Update to Capacitor v3
+
+### Features
+
+* add `isLanguageSupported` method ([#58](https://github.com/capacitor-community/text-to-speech/issues/58)) ([eb39f93](https://github.com/capacitor-community/text-to-speech/commit/eb39f93e31c0ec008a0058b32464b4f43471b322))
+* add Capacitor 3 support ([#47](https://github.com/capacitor-community/text-to-speech/issues/47)) ([912a914](https://github.com/capacitor-community/text-to-speech/commit/912a91455f100aa430d1a108090fb7f8ff2bc8e9))
+* add support for `getSupportedVoices` on iOS ([b13d5a7](https://github.com/capacitor-community/text-to-speech/commit/b13d5a7dc7956e77e5c11b43480901bec544001d))
+* **android:** support the `voice` property ([#90](https://github.com/capacitor-community/text-to-speech/issues/90)) ([1d8865f](https://github.com/capacitor-community/text-to-speech/commit/1d8865f3dbe1ab86a840ff46a8b643e08fdd79ea))
+* **ios:** support the `voice` property ([#93](https://github.com/capacitor-community/text-to-speech/issues/93)) ([8b97820](https://github.com/capacitor-community/text-to-speech/commit/8b9782066dd0da9336bf9cd69698b602ad867659))
+* update gradle to 8.0.2 and gradle plugin to 8.0.0 ([be75995](https://github.com/capacitor-community/text-to-speech/commit/be7599547964f8520eb4a4108ac4702baf805ce7))
+* update to Capacitor 4 ([#81](https://github.com/capacitor-community/text-to-speech/issues/81)) ([e108ff3](https://github.com/capacitor-community/text-to-speech/commit/e108ff360ff7735b089321ff637238c22e580df0))
+* update to Capacitor 5 ([#99](https://github.com/capacitor-community/text-to-speech/issues/99)) ([7ca0ec4](https://github.com/capacitor-community/text-to-speech/commit/7ca0ec46ad3dc86710a22fca672e7bb4ab5eee42))
+* update to Capacitor 6 ([#113](https://github.com/capacitor-community/text-to-speech/issues/113)) ([b4c1942](https://github.com/capacitor-community/text-to-speech/commit/b4c1942e7de661d6e79cf6e5f74fbaddb0c94119))
+
+
+### Bug Fixes
+
+* **android:** `getSupportedVoices()` is not available for api levels < 24 ([#124](https://github.com/capacitor-community/text-to-speech/issues/124)) ([0ccace8](https://github.com/capacitor-community/text-to-speech/commit/0ccace825ce67ec75495b202a9fc505bc0c64ce4))
+* **android:** `java.lang.NoClassDefFoundError` error ([#109](https://github.com/capacitor-community/text-to-speech/issues/109)) ([a3d2add](https://github.com/capacitor-community/text-to-speech/commit/a3d2add74e233fbfb09aaeb11e65a2c0e830630e))
+* **android:** `speechRate` and `pitchRate` are ignored ([#43](https://github.com/capacitor-community/text-to-speech/issues/43)) ([153a500](https://github.com/capacitor-community/text-to-speech/commit/153a500aef2245de61885ce282f7d5111f28b803))
+* **android:** add queries in the AndroidManifest.xml ([#121](https://github.com/capacitor-community/text-to-speech/issues/121)) ([8c3594b](https://github.com/capacitor-community/text-to-speech/commit/8c3594b1df4b6185a472ef2e9e59a1ba3a21a981))
+* **android:** get supported languages ([#29](https://github.com/capacitor-community/text-to-speech/issues/29)) ([bf477aa](https://github.com/capacitor-community/text-to-speech/commit/bf477aab9f713413e8b418d809de26a0482524b0))
+* **android:** get supported voices ([#31](https://github.com/capacitor-community/text-to-speech/issues/31)) ([0870389](https://github.com/capacitor-community/text-to-speech/commit/087038989a6ba77bcce14506b89172046f754ee7))
+* **android:** handle IETF BCP 47 language tag string correctly ([#66](https://github.com/capacitor-community/text-to-speech/issues/66)) ([296adcb](https://github.com/capacitor-community/text-to-speech/commit/296adcba96641de60aea7cc74c292f2fdd3f7ada))
+* **android:** shutdown tts on destroy ([#56](https://github.com/capacitor-community/text-to-speech/issues/56)) ([2b6da17](https://github.com/capacitor-community/text-to-speech/commit/2b6da17f4f73c9d4443a2cdd325a5f918dd04bc8))
+* different behavior with blank `text` ([#39](https://github.com/capacitor-community/text-to-speech/issues/39)) ([527a51f](https://github.com/capacitor-community/text-to-speech/commit/527a51f7cf6cbc4debec5f239f4479488554d494))
+* inline source code in esm map files ([29a1aa8](https://github.com/capacitor-community/text-to-speech/commit/29a1aa8d5256ec1fcd168a0802b616fbd8935a58))
+* **ios:** `speak` method resolves immediately on iOS ([#59](https://github.com/capacitor-community/text-to-speech/issues/59)) ([e77e8ba](https://github.com/capacitor-community/text-to-speech/commit/e77e8baf459d197798f16e5034288677d5e41cb1))
+* **ios:** not working in background ([#35](https://github.com/capacitor-community/text-to-speech/issues/35)) ([63108ab](https://github.com/capacitor-community/text-to-speech/commit/63108abb6b35ffabb5d04ef9a720267ddad2f33b))
+* **ios:** pod failed to validate ([#46](https://github.com/capacitor-community/text-to-speech/issues/46)) ([6a83100](https://github.com/capacitor-community/text-to-speech/commit/6a831003d3c29f9fa6a46dc27e20267246b3ec1a))
+* **ios:** set deployment target to `13.0` ([dcda399](https://github.com/capacitor-community/text-to-speech/commit/dcda399a01d3fdc04eedbdfab4fa49064cba81b7))
+* **ios:** speech rate adjusted to other platforms ([#36](https://github.com/capacitor-community/text-to-speech/issues/36)) ([d33dceb](https://github.com/capacitor-community/text-to-speech/commit/d33dceb2ed132616a1aaa7b40177ea1d7c6321c3))
+* publish only necessary files ([#23](https://github.com/capacitor-community/text-to-speech/issues/23)) ([359f2d2](https://github.com/capacitor-community/text-to-speech/commit/359f2d203abff1890369bd10a31668ea202a5ae3))
+* **web:** stop on window unload ([#79](https://github.com/capacitor-community/text-to-speech/issues/79)) ([22f4bd7](https://github.com/capacitor-community/text-to-speech/commit/22f4bd7c1e9c2e6ce745454e46b9cd16ef2c3c55))
+* **web:** stop speaking on a new call ([#44](https://github.com/capacitor-community/text-to-speech/issues/44)) ([6b1b83e](https://github.com/capacitor-community/text-to-speech/commit/6b1b83e28191b1882bc50f2e103f766c4e5182df))
+
+
+* remove `setSpeechRate` and `setPitchRate` ([#49](https://github.com/capacitor-community/text-to-speech/issues/49)) ([c4bd0a8](https://github.com/capacitor-community/text-to-speech/commit/c4bd0a85197921f23fd43f3d4a9f6bd2d998183a))
+* rename `TTSOptions` properties ([#51](https://github.com/capacitor-community/text-to-speech/issues/51)) ([83c4370](https://github.com/capacitor-community/text-to-speech/commit/83c43708165f5365158eb05eb22e5f69f15b7bef))
+
 ### [4.0.2](https://github.com/capacitor-community/text-to-speech/compare/v4.0.1...v4.0.2) (2024-06-22)
 
 
