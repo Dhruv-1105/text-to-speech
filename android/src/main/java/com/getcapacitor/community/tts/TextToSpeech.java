@@ -54,32 +54,26 @@ public class TextToSpeech implements android.speech.tts.TextToSpeech.OnInitListe
         tts.setOnUtteranceProgressListener(
             new UtteranceProgressListener() {
                 @Override
-                public void onStart(String utteranceId) {
-                    Log.d("TTS", "Utterance started: " + utteranceId);
-                }
+                public void onStart(String utteranceId) {}
 
                 @Override
                 public void onDone(String utteranceId) {
-                    Log.d("TTS", "Utterance done: " + utteranceId);
                     resultCallback.onDone();
                 }
 
                 @Override
                 public void onError(String utteranceId) {
-                    Log.d("TTS", "Utterance error: " + utteranceId);
                     resultCallback.onError();
                 }
 
                 @Override
                 public void onRangeStart(String utteranceId, int start, int end, int frame) {
                     String spokenWord = text.substring(start, end);
-                    Log.d("TTS", "Spoken word: " + spokenWord);
                     resultCallback.onRangeStart(start, end, spokenWord);
                 }
 
             }
         );
-
 
         Locale locale = Locale.forLanguageTag(lang);
 

@@ -61,7 +61,7 @@ public class TextToSpeechPlugin extends Plugin {
                 JSObject ret = new JSObject();
                 ret.put("start", start);
                 ret.put("end", end);
-                ret.put("spokenWord", spokenWord); // Include spokenWord in the response
+                ret.put("spokenWord", spokenWord);
                 notifyListeners("onRangeStart", ret);
             }
         };
