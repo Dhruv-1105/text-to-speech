@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.3](https://github.com/capacitor-community/text-to-speech/compare/v5.0.1...v4.0.3) (2024-07-10)
+
 ### [5.0.1](https://github.com/Dhruv-1105/text-to-speech/compare/v5.0.0...v5.0.1) (2024-07-05)
 
 ## 5.0.0 (2024-07-05)
